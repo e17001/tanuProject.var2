@@ -1,0 +1,128 @@
+/* common */
+/* 画面はsmallがデフォ。必要に応じてmedium(width: 570px 以上) large(width: 820px以上)を指定*/
+/**{
+  border: 1px solid;
+  }*/
+body {
+  font: 14px serif;
+}
+
+header {
+font-size: 60px;
+color: #999;
+text-align: right;
+margin-bottom: -50px;
+
+}
+
+a {
+  color: #00B7FF;
+}
+
+.center{
+  margin: auto;
+  text-align: center;
+}
+
+.btn{
+  font-size: 25px;
+  display: inline;
+  width: 100px;
+  line-height: 45px;
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+  opacity: 0.9;
+  margin: auto;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.bt-start{
+  background: pink;
+}
+
+.bt-next{
+  background: green;
+}
+
+.bt-back{
+  background: orange;
+}
+
+/* talk */
+table.tanu {
+  background-color: skyblue;
+}
+
+
+/* 内番 */
+.uchiban{
+  width: 90%;
+  margin: auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.uchiban > table {
+  width: 90%;
+  text-align: center;
+}   
+
+.tHead {
+  color: white;
+}
+
+/* 畑当番 */
+.hatake {
+  background-color: lime;
+} 
+
+.hatake > .tHead{
+  background-color: green;
+}
+/* 馬当番 */
+.uma {
+  background-color: skyblue;
+}
+.uma > .tHead{
+  background-color: blue;
+}
+/* 手合わせ */
+.teawase {
+  background-color: pink;
+}
+.teawase > .tHead{
+  background-color: red;
+}
+
+.uchibanList-head{
+  width: 10px;
+  background-color: #000;
+  color: white;
+}
+
+
+
+/* medium */
+
+
+@media (min-width: 570px) {
+/*common (medium)*/
+  body{
+    font-size: 20px; 
+  }
+  
+/*内番（medium）*/
+  .uchiban{
+    width: 500px;
+  }
+}
+
+/* large */
+
+@media (min-width: 820px) {
+
+}
