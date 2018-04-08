@@ -1,7 +1,6 @@
 <?php 
-require_once(__DIR__ . '/functions.php');
 
-$css = '/styles.css';
+require_once(__DIR__ . '/config.php');
 
  ?>
 
@@ -9,7 +8,12 @@ $css = '/styles.css';
 <html>
   <head>
     <title>今日の内番</title>
-    <link rel='stylesheet' href='<?php echo $css; ?>' />
+    <link rel='stylesheet' href='<?php echo h($css); ?>' />
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+    
+    <script src="<?php echo h($js); ?>jquery-3.3.1.min.js"></script>
+    <script src="<?php echo h($js); ?>getWord.js"></script>
+    <script src="<?php echo h($js); ?>uchiban.js"></script>
   </head>
   <body>
     <header><h1>今日の内番</h1></header>
