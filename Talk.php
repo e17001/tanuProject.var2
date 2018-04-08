@@ -40,7 +40,16 @@ class Talk {
   private function _wiki() {
     $query = $this->_serchWiki();
     // $reqry = makeWikiMessage($query);
-    var_dump($query);
+    // var_dump($query);
+
+    $_SESSION['repeat'] = $_POST['saniwa_message'];
+    $_SESSION['messege'] = array(
+      0 => $query['keyword'] . '?</br>調べてくるからちょっと待ってろ！',
+      1 => $query['overview'] . '... だとよ。',
+      2 => '気になるなら、自分で調べてくれ</br>' . $query['url']
+      );
+
+    // var_dump($_SESSION);
   }
 
   private function _serchWiki() {
@@ -51,7 +60,7 @@ class Talk {
 
       return array(
       'keyword' => $page['title'],
-      'overview' => substr($page['extract'], 0, 200),
+      'overview' => substr($page['extract'], 0, 100),
       'url' => 'https://ja.wikipedia.org/wiki/' . $page['title']
       );
   }

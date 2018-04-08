@@ -4,18 +4,17 @@ $(function() {
 
   $('#btn').on('click', function(){
     // console.log('btn click');
-    var saniwa = $('#saniwa_message').val().replace(/　/g," ");
-    // console.log(sentMassage);
-    // $('#saniwa').html(saniwaMassage);
+    var saniwa = $('#input_word').val().split(' ');
+    $('#saniwa_message').val(saniwa);
     $('#mode').val(selectMode(saniwa));
-    $('form').submit();
+    $('#saniwa_form').submit();
 
   });
 
 });
 
 function selectMode(str) {
-  var first = str.split(' ')[0];
+  var first = str;
   switch(first) {
     case '遠征':
       return 'ensei';
