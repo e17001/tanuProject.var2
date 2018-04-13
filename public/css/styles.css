@@ -11,7 +11,7 @@ header {
 font-size: 60px;
 color: #999;
 text-align: right;
-margin-bottom: -50px;
+/*margin-bottom: -50px;*/
 
 }
 
@@ -103,6 +103,64 @@ table.tanu {
   background-color: #000;
   color: white;
 }
+
+/* 吹き出し */
+
+content{  
+  display: block;
+  margin: 0;
+}
+
+.balloon-left {
+  position: relative;
+  display: inline-block;
+  margin: 1.5em 0 1.5em 15px;
+  padding: 10px;
+  min-width: 120px;
+  max-width: 100%;
+  font-size: 16px;
+  background-color: pink;
+  border-radius: 5px;
+}
+
+.balloon-left::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 0;
+  height:0;
+  top: 10%;
+  left: -10px;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 15px solid pink;
+}
+
+.balloon-right {
+  position: relative;
+  display: inline-block;
+  margin: 1.5em 0 1.5em 15px;
+  padding: 10px;
+  min-width: 120px;
+  max-width: 100%;
+  font-size: 16px;
+  background-color: skyblue;
+  border-radius: 5px;
+}
+
+.balloon-right::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 0;
+  height:0;
+  top: 10%;
+  right: -10px;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid skyblue;
+}
+
 
 
 
