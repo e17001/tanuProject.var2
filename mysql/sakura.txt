@@ -11,9 +11,9 @@ session_start();
 
 require_once(__DIR__ . '/functions.php');
 
-define('DSN', 'mysql:host=mysql626.db.sakura.ne.jp;dbname=crazy-for-kanon_tourabu_db;charset=utf8');
-define('DB_USERNAME', 'crazy-for-kanon');
-define('DB_PASSWORD', '0803uenoanesama');
+define('DSN', 'mysql:host=データベースサーバー;データベース名;charset=utf8');
+define('DB_USERNAME', 'ユーザー名');
+define('DB_PASSWORD', 'パスワード');
 
 $css = 'public/css/styles.css';
 $js = 'public/javaScripts/';
