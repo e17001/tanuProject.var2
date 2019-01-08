@@ -1,10 +1,10 @@
-データベース サーバ  ******************
+データベース サーバ  ***
 
 データベース ユーザ名 (初期アカウント名) 
-crazy-for-kanon
+***
 
 データベース名
-crazy-for-kanon_tourabu_db
+***_db
 
 <?php
 session_start();
